@@ -53,11 +53,11 @@ int main() {
             break;
         case 9: {
             int a[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-            Lab9 lab9(a);
+            Lab9 lab9(a, 10);
             lab9.echoList();
             int k = 5;
-//            lab9.deleteItem(k);
-//            lab9.echoList();
+            lab9.deleteItem(k);
+            lab9.echoList();
         }
             break;
         default:

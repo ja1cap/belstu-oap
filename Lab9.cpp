@@ -8,15 +8,28 @@
 
 using namespace std;
 
-void Lab9::deleteItem(int index) {
-//    delete list[index];
+void Lab9::deleteItem(int deleteIndex) {
+    cout << "Удалить элемент массива #" << deleteIndex << endl;
+    int _list[listSize-1];
+    int k = 0;
+    for( int i = 0; i < listSize; i++ ){
+        if( i+1 != deleteIndex ){
+            _list[k] = list[i];
+            k++;
+        }
+    }
+    listSize--;
+    list = _list;
 };
 
 void Lab9::echoList() {
-    cout << (sizeof(list) / sizeof(int)) << endl;
     printf("List {");
-    for (int index = 0; index < (sizeof(list) / sizeof(int)); index++) {
-        printf("'%d', ", list[index]);
+    for (int index = 0; index < listSize; index++) {
+        if(listSize != (index+1)){
+            printf("%d, ", list[index]);
+        } else {
+            printf("%d", list[index]);
+        }
     }
     printf("};\n");
 }

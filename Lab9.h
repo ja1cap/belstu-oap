@@ -9,12 +9,11 @@
 class Lab9 {
 private:
     int *list;
+    int listSize;
 
 public:
-    Lab9(int _list[]) {
-        list = _list;
-    }
-    void deleteItem(int index);
+    Lab9(int *list, int listSize) : list(list), listSize(listSize) { }
+    void deleteItem(int deleteIndex);
     void echoList();
 };
 
