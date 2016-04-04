@@ -13,8 +13,8 @@ void Lab5::calculateFor(double j[3]) {
     for (unsigned int i = 0; i < 3; i++) {
         value = j[i];
         cout << "Значение: " << value << endl;
-        cout << "Результат формулы 1[h]: " << formula1(value) << endl;
-        cout << "Результат формулы 2[y]: " << formula2(value) << endl;
+        cout << "Результат формулы 1: h = " << formula1(value) << endl;
+        cout << "Результат формулы 2: y = " << formula2(value) << endl;
     }
 
 }
@@ -30,8 +30,8 @@ void Lab5::calculateWhile(double j[3]) {
 
         value = j[i];
         cout << "Значение: " << value << endl;
-        cout << "Результат формулы 1[h]: " << formula1(value) << endl;
-        cout << "Результат формулы 2[y]: " << formula2(value) << endl;
+        cout << "Результат формулы 1: h = " << formula1(value) << endl;
+        cout << "Результат формулы 2: y = " << formula2(value) << endl;
 
     } while (i < 3);
 

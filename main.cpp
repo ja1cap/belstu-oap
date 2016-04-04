@@ -1,6 +1,8 @@
 #include <iostream>
 #include "Lab4.h"
 #include "Lab5.h"
+#include "Lab7.h"
+#include "Lab9.h"
 
 using namespace std;
 
@@ -8,9 +10,9 @@ int main() {
 
     int labNumber;
 
-    labNumber = 5;
-//    cout << "Введите номер лабораторной: ";
-//    cin >> labNumber;
+//    labNumber = 7;
+    cout << "Введите номер лабораторной: ";
+    cin >> labNumber;
 
     switch (labNumber) {
         case 4: {
@@ -40,6 +42,22 @@ int main() {
             double jWhile[3] = {0, 0.1, 1.7};
             lab5.calculateWhile(jWhile);
 
+        }
+            break;
+        case 7: {
+            Lab7 lab7;
+            int n = 5;
+            double a[] = {0.8, 4, -7, 2, 0.91};
+            lab7.calculate(n, a);
+        }
+            break;
+        case 9: {
+            int a[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+            Lab9 lab9(a);
+            lab9.echoList();
+            int k = 5;
+//            lab9.deleteItem(k);
+//            lab9.echoList();
         }
             break;
         default:
