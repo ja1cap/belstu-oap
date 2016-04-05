@@ -7,11 +7,9 @@
 
 
 class Lab9 {
-private:
+public:
     int *list;
     int listSize;
-
-public:
     Lab9(int *list, int listSize) : list(list), listSize(listSize) { }
     void deleteItem(int deleteIndex);
     void echoList();
